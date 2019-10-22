@@ -18,8 +18,8 @@ public class PerfectSquare {
             do {
                 square = number * number;
                 number++;
-            } while (square <= n);
-            return square;
+            } while (square < n);
+            return square == n ? 1 : 0;
         }
     }
 }
